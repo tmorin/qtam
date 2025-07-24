@@ -2,3 +2,9 @@
 .idea/
 *.bak
 .$*
+node_modules/
+src/index.*
+src/style.*
+src/sitemap.*
+static/
+

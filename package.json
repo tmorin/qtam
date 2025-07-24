@@ -1,0 +1,31 @@
+{
+  "name": "qtam-website",
+  "scripts": {
+    "bindex": "minify src/_main.html > src/index.html",
+    "bsitemap": "node scripts/generate-sitemap.mjs",
+    "bstyle": "sass bootstrap.scss src/style.css --style compressed",
+    "build": "scripts/build.sh",
+    "watch": "npm-watch"
+  },
+  "watch": {
+    "bindex": {
+      "patterns": [
+        "src/main.html"
+      ]
+    },
+    "bsitemap": {
+      "patterns": [
+        "src/main.html"
+      ]
+    },
+    "bstyle": "bootstrap.scss"
+  },
+  "devDependencies": {
+    "bootstrap": "^5.3.7",
+    "globby": "^14.1.0",
+    "minify": "^14.0.0",
+    "npm-watch": "^0.13.0",
+    "sass": "^1.89.2",
+    "sitemap": "^8.0.0"
+  }
+}
